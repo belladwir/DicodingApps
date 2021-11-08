@@ -11,7 +11,7 @@
         <!--My Profile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DicodingApps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerScene" id="BYZ-38-t0r" customClass="ViewController" customModule="DicodingApps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="2349.275362318841" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Challenges View Controller-->
         <scene sceneID="dZm-gG-5wZ">
             <objects>
-                <viewController id="Hbf-Ge-WPv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChallengesViewControllerScene" id="Hbf-Ge-WPv" customClass="ChallengesViewController" customModule="DicodingApps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="53q-Lm-HIm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="528.98550724637687" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Academies View Controller-->
         <scene sceneID="wvn-0C-8vE">
             <objects>
-                <viewController id="dy6-YY-DCd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AcademiesViewControllerScene" id="dy6-YY-DCd" customClass="AcademiesViewController" customModule="DicodingApps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m7R-OY-JXq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,10 +351,66 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RfI-EY-j2E"/>
+                    <connections>
+                        <outlet property="androidAcademy" destination="0jl-oJ-NAn" id="OEp-AG-FPu"/>
+                        <outlet property="arvrAcademy" destination="boX-Sk-6mL" id="h4F-4g-xIs"/>
+                        <outlet property="cloudAcademy" destination="2X9-YG-upd" id="efy-3p-eMx"/>
+                        <outlet property="unityAcademy" destination="12T-cs-VRu" id="6MA-gS-9ZM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apf-11-ywm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2347.826086956522" y="-662.27678571428567"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="DEf-fK-ocA">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewControllerScene" id="trC-Sr-ewi" customClass="DetailViewController" customModule="DicodingApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="28x-Ur-WCG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxN-Eb-2hg">
+                                <rect key="frame" x="8" y="144" width="398" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="android" translatesAutoresizingMaskIntoConstraints="NO" id="Aw4-BY-WoZ">
+                                <rect key="frame" x="57" y="178" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="zPC-7Q-tOD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emy-C6-rIz">
+                                <rect key="frame" x="8" y="486" width="398" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dku-mS-IIV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dku-mS-IIV" firstAttribute="trailing" secondItem="Emy-C6-rIz" secondAttribute="trailing" constant="8" id="Ca2-7t-mZu"/>
+                            <constraint firstItem="UxN-Eb-2hg" firstAttribute="top" secondItem="dku-mS-IIV" secondAttribute="top" constant="100" id="Dma-NE-3tD"/>
+                            <constraint firstItem="UxN-Eb-2hg" firstAttribute="leading" secondItem="dku-mS-IIV" secondAttribute="leading" constant="8" id="M4m-cf-74a"/>
+                            <constraint firstItem="Emy-C6-rIz" firstAttribute="leading" secondItem="dku-mS-IIV" secondAttribute="leading" constant="8" id="Tkd-kD-R0L"/>
+                            <constraint firstItem="Aw4-BY-WoZ" firstAttribute="top" secondItem="UxN-Eb-2hg" secondAttribute="bottom" constant="10" id="eXi-kN-gfW"/>
+                            <constraint firstItem="Aw4-BY-WoZ" firstAttribute="centerX" secondItem="28x-Ur-WCG" secondAttribute="centerX" id="et7-KL-qsC"/>
+                            <constraint firstItem="dku-mS-IIV" firstAttribute="trailing" secondItem="UxN-Eb-2hg" secondAttribute="trailing" constant="8" id="gd0-pu-3Px"/>
+                            <constraint firstItem="Emy-C6-rIz" firstAttribute="top" secondItem="Aw4-BY-WoZ" secondAttribute="bottom" constant="8" id="tDs-m6-4Hr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descDetail" destination="Emy-C6-rIz" id="6H4-wI-eRK"/>
+                        <outlet property="imageDetail" destination="Aw4-BY-WoZ" id="omw-kc-1PI"/>
+                        <outlet property="titleDetail" destination="UxN-Eb-2hg" id="ZAS-w8-fya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-J0-BQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3217" y="-662"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="EEZ-jz-ZDy">
@@ -375,10 +431,10 @@
             </objects>
             <point key="canvasLocation" x="1439.1304347826087" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="bi7-MI-HLc">
             <objects>
-                <viewController id="Llz-H9-5KS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewControllerScene" id="Llz-H9-5KS" customClass="ProfileViewController" customModule="DicodingApps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5gg-Ef-mba">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3277D227392BDE005885F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3277D127392BDE005885F5 /* DetailViewController.swift */; };
+		EB3277D727392C0D005885F5 /* AcademiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3277D627392C0D005885F5 /* AcademiesViewController.swift */; };
+		EB3277DC27392C47005885F5 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3277DB27392C47005885F5 /* ChallengesViewController.swift */; };
+		EB3277E127392C5F005885F5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3277E027392C5F005885F5 /* ProfileViewController.swift */; };
 		EB70C3A9273505D900132BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70C3A8273505D900132BC7 /* AppDelegate.swift */; };
 		EB70C3AB273505D900132BC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70C3AA273505D900132BC7 /* SceneDelegate.swift */; };
 		EB70C3AD273505DA00132BC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70C3AC273505DA00132BC7 /* ViewController.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB3277D127392BDE005885F5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EB3277D627392C0D005885F5 /* AcademiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademiesViewController.swift; sourceTree = "<group>"; };
+		EB3277DB27392C47005885F5 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		EB3277E027392C5F005885F5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EB70C3A5273505D900132BC7 /* DicodingApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DicodingApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB70C3A8273505D900132BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB70C3AA273505D900132BC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB3277E627392C86005885F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB70C3AC273505DA00132BC7 /* ViewController.swift */,
+				EB3277D127392BDE005885F5 /* DetailViewController.swift */,
+				EB3277D627392C0D005885F5 /* AcademiesViewController.swift */,
+				EB3277DB27392C47005885F5 /* ChallengesViewController.swift */,
+				EB3277E027392C5F005885F5 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EB70C39C273505D900132BC7 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +121,7 @@
 			children = (
 				EB70C3A8273505D900132BC7 /* AppDelegate.swift */,
 				EB70C3AA273505D900132BC7 /* SceneDelegate.swift */,
-				EB70C3AC273505DA00132BC7 /* ViewController.swift */,
+				EB3277E627392C86005885F5 /* Controller */,
 				EB70C3AE273505DA00132BC7 /* Main.storyboard */,
 				EB70C3B1273505DC00132BC7 /* Assets.xcassets */,
 				EB70C3B3273505DC00132BC7 /* LaunchScreen.storyboard */,
@@ -260,7 +280,11 @@
 			files = (
 				EB70C3AD273505DA00132BC7 /* ViewController.swift in Sources */,
 				EB70C3A9273505D900132BC7 /* AppDelegate.swift in Sources */,
+				EB3277D727392C0D005885F5 /* AcademiesViewController.swift in Sources */,
 				EB70C3AB273505D900132BC7 /* SceneDelegate.swift in Sources */,
+				EB3277E127392C5F005885F5 /* ProfileViewController.swift in Sources */,
+				EB3277DC27392C47005885F5 /* ChallengesViewController.swift in Sources */,
+				EB3277D227392BDE005885F5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
