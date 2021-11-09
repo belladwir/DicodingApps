@@ -218,6 +218,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ysv-bh-A7s"/>
+                    <connections>
+                        <outlet property="arChallenge" destination="KsF-fN-LOD" id="Oxy-6g-Nwz"/>
+                        <outlet property="educationChallenge" destination="6b6-le-UJn" id="68t-rC-GbQ"/>
+                        <outlet property="flutterChallenge" destination="hrK-TV-zb8" id="cjq-UN-xPP"/>
+                        <outlet property="guestBookChallenge" destination="aKe-Uy-pqZ" id="7k6-Z4-mSO"/>
+                        <outlet property="webChallenge" destination="SIg-jz-ktH" id="Gpb-TU-bV4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SW5-7r-acl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
